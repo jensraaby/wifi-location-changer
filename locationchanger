@@ -27,20 +27,16 @@ LOCATION=
 # LOCATIONS 
 # (use to be used Location name here)
 # =============================================
-Location_Automatic="Automatic"
-Location_Work="Company Intranet"
+Location_Automatic="BBC Off Network"
+Location_Work="BBC On Network"
 
 # SSIDS
 # =====
-SSID_TelekomPublic=Telekom
-SSID_Home=HomeSSID
-SSID_Work=WorkSSID
+SSID_Work=Corporate_Wireless_Network
 
 
 # SSID -> LOCATION mapping
 case $SSID in
-	$SSID_TelekomPublic ) LOCATION="$Location_Automatic";;
-	$SSID_Home          ) LOCATION="$Location_Automatic";;
 	$SSID_Work  ) LOCATION="$Location_Work";;
 	# ... add more here
 esac
